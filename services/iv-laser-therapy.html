@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IV Laser Therapy (IVLT) | Advanced Photomedicine | Juventas</title>
+    <meta name="description" content="Discover Intravenous Laser Therapy - cutting-edge photomedicine delivering laser light directly into bloodstream for cellular bio-modulation and systemic healing.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .therapy-hero {
+            background: linear-gradient(135deg, var(--light-green) 0%, var(--white) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .mechanism-section {
+            background: var(--white);
+            padding: 80px 0;
+        }
+        
+        .mechanism-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .mechanism-card {
+            background: var(--light-green);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .mechanism-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .wavelength-section {
+            background: var(--light-gray);
+            padding: 80px 0;
+        }
+        
+        .wavelength-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .wavelength-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .wavelength-color {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+        
+        .red { background: #dc3545; }
+        .green { background: #28a745; }
+        .blue { background: #007bff; }
+        .yellow { background: #ffc107; }
+        
+        .benefits-timeline {
+            background: var(--white);
+            padding: 80px 0;
+        }
+        
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-green);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .timeline-content {
+            background: var(--light-green);
+            padding: 30px;
+            border-radius: 15px;
+            width: 45%;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: auto;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-green);
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .condition-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--primary-green);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="../assets/images/juventas-logo.jpg" alt="Juventas Logo" class="logo">
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="index.html">Services</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../contact.html" class="cta-button">Consultation</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Therapy Hero -->
+    <section class="therapy-hero">
+        <div class="container">
+            <h1>Intravenous Laser Therapy (IVLT)</h1>
+            <p class="subtitle">Cutting-Edge Biomedical Innovation</p>
+            <p>Advanced photomedicine delivering specific wavelengths of low-level laser light directly into the bloodstream for systemic cellular bio-modulation and healing.</p>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section style="background: var(--white); padding: 80px 0;">
+        <div class="container">
+            <div class="two-column">
+                <div>
+                    <h2>Revolutionary Light-Based Medicine</h2>
+                    <p>In the realm of advanced medical therapies, Intravenous Laser Therapy (IVLT) has emerged as a novel and promising technique that blends photomedicine with modern healthcare to address a variety of chronic and acute conditions.</p>
+                    
+                    <p>Unlike traditional laser therapy applied externally, IVLT delivers specific wavelengths of low-level laser light directly into the bloodstream, allowing systemic and cellular bio-modulation from within.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Historical Origins</h3>
+                        <p><strong>Developed in Russia and Germany (1970s-80s)</strong><br>
+                        First developed by Russian scientists E.N. Meschalkin and V.S. Sergiewski, who explored the use of low-level laser light delivered directly into the bloodstream to improve circulation, enhance oxygen delivery, and support immune function.</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="background: var(--light-green); padding: 40px; border-radius: 15px;">
+                        <div style="font-size: 4rem; color: var(--primary-green); margin-bottom: 20px;">💡</div>
+                        <h3>Advanced Photomedicine</h3>
+                        <p>Harnessing the power of precise light wavelengths for cellular healing and regeneration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How IVLT Works -->
+    <section style="background: var(--light-gray); padding: 80px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">How IVLT Therapy Is Administered</h2>
+            
+            <div class="mechanism-grid">
+                <div class="mechanism-card">
+                    <div style="font-size: 3rem; color: var(--primary-green); margin-bottom: 15px;">🔌</div>
+                    <h3>Fiber Optic Insertion</h3>
+                    <p>A fiber optic cable is inserted through a catheter into a vein—commonly the cubital vein in the arm</p>
+                </div>
+                
+                <div class="mechanism-card">
+                    <div style="font-size: 3rem; color: var(--primary-green); margin-bottom: 15px;">🌈</div>
+                    <h3>Precise Wavelengths</h3>
+                    <p>The cable delivers specific laser wavelengths directly into the bloodstream with medical precision</p>
+                </div>
+                
+                <div class="mechanism-card">
+                    <div style="font-size: 3rem; color: var(--primary-green); margin-bottom: 15px;">🩸</div>
+                    <h3>Systemic Distribution</h3>
+                    <p>Light energy circulates throughout the body, reaching cells and tissues systemically</p>
+                </div>
+                
+                <div class="mechanism-card">
+                    <div style="font-size: 3rem; color: var(--primary-green); margin-bottom: 15px;">⚡</div>
+                    <h3>Cellular Activation</h3>
+                    <p>Photobiomodulation triggers enhanced cellular function and natural healing processes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wavelengths -->
+    <section class="wavelength-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Therapeutic Wavelengths</h2>
+            <p style="text-align: center; margin-bottom: 50px; font-size: 1.1rem;">Each wavelength targets specific cellular processes and therapeutic effects</p>
+            
+            <div class="wavelength-grid">
+                <div class="wavelength-card">
+                    <div class="wavelength-color red"></div>
+                    <h3>Red Light</h3>
+                    <p><strong>635 nm</strong></p>
+                    <p>Enhanced circulation, wound healing, and cellular energy production</p>
+                </div>
+                
+                <div class="wavelength-card">
+                    <div class="wavelength-color green"></div>
+                    <h3>Green Light</h3>
+                    <p><strong>532 nm</strong></p>
+                    <p>Immune system modulation and anti-inflammatory effects</p>
+                </div>
+                
+                <div class="wavelength-card">
+                    <div class="wavelength-color blue"></div>
+                    <h3>Blue Light</h3>
+                    <p><strong>405 nm</strong></p>
+                    <p>Antimicrobial action and tissue regeneration</p>
+                </div>
+                
+                <div class="wavelength-card">
+                    <div class="wavelength-color yellow"></div>
+                    <h3>Additional Spectra</h3>
+                    <p><strong>Yellow/Infrared</strong></p>
+                    <p>Specialized applications for specific therapeutic protocols</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mechanism of Action -->
+    <section class="mechanism-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">Mechanisms of Action</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Photobiomodulation</h3>
+                        <p>Laser light interacts with mitochondria—specifically with cytochrome c oxidase in the electron transport chain, enhancing ATP production</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Nitric Oxide Release</h3>
+                        <p>Promotes nitric oxide release, improving microcirculation and vascular function throughout the body</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>ROS Modulation</h3>
+                        <p>Modulates reactive oxygen species (ROS), crucial for immune signaling and inflammation regulation</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Natural Healing Enhancement</h3>
+                        <p>Leverages the body's inherent healing mechanisms by enhancing cellular efficiency and immune competence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits -->
+    <section style="background: var(--light-gray); padding: 80px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">Comprehensive Health Benefits</h2>
+            
+            <div class="conditions-grid">
+                <div class="condition-card">
+                    <h3>🫁 Enhanced Oxygen Utilization</h3>
+                    <p>Improved oxygen delivery and utilization at tissue level. Laser stimulation encourages red blood cell deformability and reduces blood viscosity.</p>
+                    <p><strong>Benefits:</strong> Cardiovascular health, chronic fatigue relief, peripheral artery support</p>
+                </div>
+                
+                <div class="condition-card">
+                    <h3>🛡️ Immune System Modulation</h3>
+                    <p>Stimulates immune responses through impact on white blood cells and cytokine production. Normalizes inflammatory responses.</p>
+                    <p><strong>Applications:</strong> Autoimmune conditions, infections, cancer adjunct therapy</p>
+                </div>
+                
+                <div class="condition-card">
+                    <h3>🔥 Anti-Inflammatory Effects</h3>
+                    <p>Reduces inflammation by modulating inflammatory cytokines and enhancing cellular repair processes.</p>
+                    <p><strong>Results:</strong> Decreased chronic pain, improved joint mobility, faster injury recovery</p>
+                </div>
+                
+                <div class="condition-card">
+                    <h3>🧠 Neuroprotective Benefits</h3>
+                    <p>Improves neurovascular coupling and supports mitochondrial function in neural tissues.</p>
+                    <p><strong>Conditions:</strong> Alzheimer's, Parkinson's, post-stroke cognitive decline</p>
+                </div>
+                
+                <div class="condition-card">
+                    <h3>🔄 Cellular Regeneration</h3>
+                    <p>Stimulates cellular metabolism and circulation, enhancing detoxification pathways and vitality.</p>
+                    <p><strong>Effects:</strong> Improved skin tone, liver function, general energy enhancement</p>
+                </div>
+                
+                <div class="condition-card">
+                    <h3>💚 Adjunct Cancer Support</h3>
+                    <p>Boosts cellular energy and modulates immune system to aid recovery and improve quality of life.</p>
+                    <p><strong>Note:</strong> Used as supportive therapy alongside conventional treatments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Profile -->
+    <section style="background: var(--primary-green); color: white; padding: 80px 0;">
+        <div class="container">
+            <div style="text-align: center;">
+                <h2>Safety and Considerations</h2>
+                <p style="font-size: 1.2rem; margin: 30px 0;">IVLT has an excellent safety profile when administered by trained professionals</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin: 40px 0;">
+                    <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                        <h4>✓ Minimal Side Effects</h4>
+                        <p>Non-invasive procedure with excellent tolerability</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                        <h4>✓ No Synthetic Compounds</h4>
+                        <p>Works with body's natural healing mechanisms</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                        <h4>✓ Professional Administration</h4>
+                        <p>Performed by certified medical professionals</p>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; margin-top: 40px; text-align: left;">
+                    <h4>Contraindications may include:</h4>
+                    <ul style="columns: 2; gap: 40px; padding-left: 20px; margin: 20px 0;">
+                        <li>Active infection at injection site</li>
+                        <li>Uncontrolled bleeding disorders</li>
+                        <li>Severe anemia</li>
+                        <li>Photosensitivity disorders</li>
+                        <li>Use of photosensitizing drugs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background: var(--light-green); padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h2>Experience the Future of Regenerative Medicine</h2>
+            <p style="font-size: 1.2rem; margin: 30px 0;">Intravenous Laser Therapy represents a fascinating intersection of light and life—where modern photonics meets the human circulatory system to potentially unlock deeper healing processes.</p>
+            <a href="../contact.html" class="cta-button">Schedule Your IVLT Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Juventas Clinic</h3>
+                    <p>The pinnacle of anti-aging innovation, bringing world-class regenerative medicine to India without compromising on excellence or exclusivity.</p>
+                </div>
+                
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="index.html">Juventas Protocol™</a></li>
+                        <li><a href="androboost.html">Androboost Program</a></li>
+                        <li><a href="iv-laser-therapy.html">IV Laser Therapy</a></li>
+                        <li><a href="iv-ozone-therapy.html">IV Ozone Therapy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Locations</h3>
+                    <ul>
+                        <li>India (Primary Clinic)</li>
+                        <li>Private Consultations:</li>
+                        <li>• Moscow</li>
+                        <li>• London</li>
+                        <li>• Dubai</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact</h3>
+                    <p>For consultation bookings and inquiries</p>
+                    <p><a href="../contact.html">Get In Touch</a></p>
+                    <p>Discreet, tailored, and world-class services</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Juventas - The Revitalization Clinic. All rights reserved. | Advanced Anti-Aging & Regenerative Medicine</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

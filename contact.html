@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Consultation Booking | Juventas - The Revitalization Clinic</title>
+    <meta name="description" content="Schedule your consultation with Dr. Shams Scheik. Private consultations available in India, Moscow, London, and Dubai. Discreet, personalized service.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, var(--light-green) 0%, var(--white) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        
+        .contact-content {
+            padding: 80px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dark-green);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #6c757d;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            min-height: 44px;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: 2px solid var(--focus-outline);
+            outline-offset: 2px;
+            border-color: var(--primary-green);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+        
+        .form-submit {
+            background: var(--primary-green);
+            color: white;
+            padding: 12px 24px;
+            border: 2px solid var(--primary-green);
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            min-height: 44px;
+        }
+        
+        .form-submit:hover {
+            background: var(--dark-green);
+            border-color: var(--dark-green);
+            transform: translateY(-1px);
+        }
+        
+        .form-submit:focus {
+            outline: 2px solid var(--focus-outline);
+            outline-offset: 2px;
+        }
+        
+        .contact-info {
+            background: var(--light-green);
+            padding: 40px;
+            border-radius: 15px;
+        }
+        
+        .location-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .location-card h3 {
+            color: var(--primary-green);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .location-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--primary-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .privacy-notice {
+            background: var(--light-gray);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .privacy-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            background: var(--primary-green);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .testimonial-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial blockquote {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin: 0 0 30px 0;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .success-message {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        
+        .error-message {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="assets/images/juventas-logo.jpg" alt="Juventas Logo" class="logo">
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services/">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html" class="cta-button">Consultation</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Schedule Your Consultation</h1>
+            <p class="subtitle">Begin Your Journey to Optimal Health</p>
+            <p>Experience world-class regenerative medicine with personalized care from Dr. Shams Scheik and his expert team.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Request Consultation</h2>
+                    <div class="success-message" id="successMessage">
+                        Thank you for your inquiry. We will contact you within 24 hours to schedule your consultation.
+                    </div>
+                    <div class="error-message" id="errorMessage">
+                        Please fill in all required fields correctly.
+                    </div>
+                    
+                    <form id="consultationForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" min="18" max="100">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Preferred Consultation Location *</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select Location</option>
+                                <option value="india">India (Primary Clinic)</option>
+                                <option value="moscow">Moscow (Private Consultation)</option>
+                                <option value="london">London (Private Consultation)</option>
+                                <option value="dubai">Dubai (Private Consultation)</option>
+                                <option value="virtual">Virtual Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service of Interest *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="juventas-protocol">Juventas Protocol™</option>
+                                <option value="androboost">Androboost Program</option>
+                                <option value="iv-laser">IV Laser Therapy</option>
+                                <option value="iv-ozone">IV Ozone Therapy</option>
+                                <option value="general-consultation">General Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message / Health Concerns</label>
+                            <textarea id="message" name="message" placeholder="Please describe your health concerns, goals, or any questions you have about our services. All information will be kept strictly confidential."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="privacy" name="privacy" required style="width: auto; margin-right: 10px;">
+                                I agree to the privacy policy and understand that my information will be handled with complete confidentiality *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Schedule Consultation</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Consultation Locations</h2>
+                    
+                    <div class="location-card">
+                        <h3><span class="location-icon">🏥</span>Primary Clinic - India</h3>
+                        <p><strong>Main Treatment Center</strong></p>
+                        <p>Comprehensive programs including all advanced therapies</p>
+                        <p>State-of-the-art facilities and full medical team</p>
+                        <p><strong>Ideal for:</strong> Complete treatment programs, extended stays</p>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h3><span class="location-icon">✈️</span>International Consultations</h3>
+                        <p><strong>Private consultations available in:</strong></p>
+                        <ul style="margin: 15px 0; padding-left: 20px;">
+                            <li><strong>Moscow</strong> - Luxury medical center</li>
+                            <li><strong>London</strong> - Discrete private clinic</li>
+                            <li><strong>Dubai</strong> - Premium wellness facility</li>
+                        </ul>
+                        <p><strong>Services:</strong> Initial consultations, follow-up visits, treatment planning</p>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h3><span class="location-icon">💻</span>Virtual Consultations</h3>
+                        <p><strong>Secure video consultations</strong></p>
+                        <p>Initial assessment and treatment planning</p>
+                        <p>Follow-up appointments and progress monitoring</p>
+                        <p><strong>Available worldwide</strong> with appropriate scheduling</p>
+                    </div>
+                    
+                    <div style="margin-top: 40px; padding: 25px; background: var(--white); border-radius: 10px;">
+                        <h3 style="color: var(--primary-green); margin-bottom: 15px;">Response Time</h3>
+                        <p><strong>24-48 hours</strong> for initial response</p>
+                        <p><strong>Consultation scheduling</strong> within 1-2 weeks</p>
+                        <p><strong>Urgent cases</strong> can be accommodated with priority scheduling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Notice -->
+    <section class="privacy-notice">
+        <div class="container">
+            <div class="privacy-card">
+                <h2>Your Privacy is Our Priority</h2>
+                <p style="margin-bottom: 30px;">At Juventas, we understand the sensitive and personal nature of health concerns. We maintain the highest standards of confidentiality and discretion.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: left;">
+                    <div>
+                        <h4 style="color: var(--primary-green); margin-bottom: 10px;">🔒 Confidential Consultations</h4>
+                        <p>All consultations are conducted in complete privacy with strict confidentiality protocols.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--primary-green); margin-bottom: 10px;">🛡️ Secure Communications</h4>
+                        <p>All communications and medical records are encrypted and securely stored.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--primary-green); margin-bottom: 10px;">👥 Discreet Service</h4>
+                        <p>Our team is trained in handling high-profile and sensitive cases with utmost discretion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <blockquote>
+                    "Dr. Scheik's approach is truly revolutionary. The personalized care and cutting-edge treatments have transformed not just my health, but my entire quality of life. The discretion and professionalism of the entire team is unmatched."
+                </blockquote>
+                <div class="testimonial-author">
+                    — International Business Executive, Age 52
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Juventas Clinic</h3>
+                    <p>The pinnacle of anti-aging innovation, bringing world-class regenerative medicine to India without compromising on excellence or exclusivity.</p>
+                </div>
+                
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services/">Juventas Protocol™</a></li>
+                        <li><a href="services/androboost.html">Androboost Program</a></li>
+                        <li><a href="services/iv-laser-therapy.html">IV Laser Therapy</a></li>
+                        <li><a href="services/iv-ozone-therapy.html">IV Ozone Therapy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Locations</h3>
+                    <ul>
+                        <li>India (Primary Clinic)</li>
+                        <li>Private Consultations:</li>
+                        <li>• Moscow</li>
+                        <li>• London</li>
+                        <li>• Dubai</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact</h3>
+                    <p>For consultation bookings and inquiries</p>
+                    <p><a href="contact.html">Get In Touch</a></p>
+                    <p>Discreet, tailored, and world-class services</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Juventas - The Revitalization Clinic. All rights reserved. | Advanced Anti-Aging & Regenerative Medicine</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const requiredFields = ['name', 'email', 'phone', 'location', 'service', 'privacy'];
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                const element = document.getElementById(field);
+                if (!element.value || (field === 'privacy' && !element.checked)) {
+                    isValid = false;
+                    element.style.borderColor = '#e74c3c';
+                } else {
+                    element.style.borderColor = '#e1e1e1';
+                }
+            });
+            
+            const errorMessage = document.getElementById('errorMessage');
+            const successMessage = document.getElementById('successMessage');
+            
+            if (isValid) {
+                errorMessage.style.display = 'none';
+                successMessage.style.display = 'block';
+                // In a real implementation, you would send the form data to a server
+                console.log('Form submitted successfully');
+            } else {
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
