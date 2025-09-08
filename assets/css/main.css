@@ -99,6 +99,13 @@ a:hover {
     padding: 8px 12px;
     display: block;
 }
+.nav a.cta-button {
+    color: var(--white);
+}
+
+.nav a.cta-button:hover {
+    color: var(--white);
+}
 
 .nav a:hover {
     color: var(--primary-green);
